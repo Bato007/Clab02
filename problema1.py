@@ -18,6 +18,5 @@ def bytesToWord(bits):
     
     return cadena
 
-
 print(wordToBits('Hola mundo'))
 print(bytesToWord('01001000011011110110110001100001001000000110110101110101011011100110010001101111'))

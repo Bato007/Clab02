@@ -1,13 +1,28 @@
 # Lab 02 Criptografía
 # Universidad del Valle de Guatemala
 
-import matplotlib.pyplot as plt
 from collections import Counter
+from problema1 import wordToBits
+from problema3 import makeHistogram
 
-tryByte = '0010010100111010111'
+bits = '0 1'
 
-def ocurrency(text):
-	c = Counter(text)
-	return c
+def countGram(elements, chain):
+    counted = {}
+    n = len(elements[0])
+    # Se separan los elementos
+    separated = [chain[i:i+n] for i in range(0, len(chain), n)]
+    for i in elements:
+        counted[i] = separated.count(i)/len(chain)
+        
+    return counted
 
-print(ocurrency(tryByte))
+
+
+def ocurrency():
+	mssg = wordToBits("ArribaLasViejasBorrachas")
+	count = countGram(bits, mssg)
+	makeHistogram(count)
+
+ocurrency()
+
