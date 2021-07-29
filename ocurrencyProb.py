@@ -15,6 +15,7 @@ def countGram(elements, chain):
     for i in elements:
         counted[i] = separated.count(i)/len(chain)
         
+        
     return counted
 
 
@@ -22,6 +23,7 @@ def countGram(elements, chain):
 def ocurrency():
 	mssg = wordToBits("ArribaLasViejasBorrachas")
 	count = countGram(bits, mssg)
+	print(count)
 	makeHistogram(count)
 
 ocurrency()

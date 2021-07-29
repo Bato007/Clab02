@@ -45,7 +45,7 @@ def generateY(length):
         y += str(i)
     return y
 
-print(logicalXor("00000101", "00000011"))
+"""print(logicalXor("00000101", "00000011"))"""
 # generateY(6)
 # count = countGram(blist, '00000101')
 # makeHistogram(count)
