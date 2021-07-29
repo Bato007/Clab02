@@ -26,6 +26,7 @@ def countGram(elements, chain):
     for i in elements:
         counted[i] = separated.count(i)/len(chain)
         counted[i] = separated.count(i)/n
+        
     return counted
 
 
