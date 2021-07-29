@@ -1,13 +1,16 @@
 # Lab 02 Criptografía
 # Universidad del Valle de Guatemala
 
-import matplotlib.pyplot as plt
 from collections import Counter
+from problema1 import wordToBits
+from problema3 import *
 
-tryByte = '0010010100111010111'
+bits = '0 1'
 
-def ocurrency(text):
-	c = Counter(text)
-	return c
+def ocurrency():
+	mssg = wordToBits("Buenos dias Magnolia")
+	count = countGram(bits, mssg)
+	makeHistogram(count)
 
-print(ocurrency(tryByte))
+ocurrency()
+

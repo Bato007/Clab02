@@ -24,7 +24,7 @@ def countGram(elements, chain):
     # Se separan los elementos
     separated = [chain[i:i+n] for i in range(0, len(chain), n)]
     for i in elements:
-        counted[i] = separated.count(i)
+        counted[i] = separated.count(i)/len(chain)
     return counted
 
 
@@ -43,7 +43,7 @@ def generateY(length):
         y += str(i)
     return y
 
-print(logicalXor("00000101", "00000011"))
+"""print(logicalXor("00000101", "00000011"))"""
 # generateY(6)
 # count = countGram(blist, '00000101')
 # makeHistogram(count)
