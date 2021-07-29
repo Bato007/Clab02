@@ -8,7 +8,7 @@ from problema3 import *
 bits = '0 1'
 
 def ocurrency():
-	mssg = wordToBits("Buenos dias Magnolia")
+	mssg = wordToBits("Arriba las Viejas Borrachas")
 	count = countGram(bits, mssg)
 	makeHistogram(count)
 
